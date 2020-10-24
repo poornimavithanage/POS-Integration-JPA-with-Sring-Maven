@@ -30,10 +30,10 @@ Further this POS System has implemented by using various technologies and framew
 
 Find the resource directory from src/main/resources/application.properties and config the below properties with your dialect,database name,user name and password.
 
-`hibernate.dialect=org.hibernate.dialect.<dialect>
- hibernate.connection.url=jdbc:mysql://localhost:3306/<database name>?createDatabaseIfNotExist=true
- hibernate.connection.username=<user name>
- hibernate.connection.password=<password>
+`javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver
+ javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/hibernate_pos
+ javax.persistence.jdbc.user=root
+ javax.persistence.jdbc.password=mysql
 
 ## Maven
 
